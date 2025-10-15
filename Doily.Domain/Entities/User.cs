@@ -1,13 +1,13 @@
-﻿namespace Doily.Domain;
+﻿namespace Doily.Domain.Entities;
 
 public class User
 {
     public int ID { get; private set; }
-    public string FirstName { get; private set; } = String.Empty;
+    public string FirstName { get; private set; } = string.Empty;
 
-    public string LastName { get; private set; } = String.Empty;
-    public string Username { get; private set; } = String.Empty;
-    public string Password { get; private set; } = String.Empty;
+    public string LastName { get; private set; } = string.Empty;
+    public string Username { get; private set; } = string.Empty;
+    public string Password { get; private set; } = string.Empty;
 
     public List<Task> Tasks { get; private set; } = [];
 

@@ -1,11 +1,11 @@
-﻿namespace Doily.Domain;
+﻿namespace Doily.Domain.Entities;
 
 public class Task
 {
     public int ID { get; private set; }
     public int UserID { get; private set; }
-    public string Title { get; private set; } = String.Empty;
-    public string Description { get; private set; } = String.Empty;
+    public string Title { get; private set; } = string.Empty;
+    public string Description { get; private set; } = string.Empty;
     public DateTime? Deadline { get; private set; }
     public bool IsCompleted { get; private set; } = false;
 
