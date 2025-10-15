@@ -9,7 +9,7 @@ public class User
     public string Username { get; private set; } = string.Empty;
     public string Password { get; private set; } = string.Empty;
 
-    public List<Task> Tasks { get; private set; } = [];
+    public List<TaskItem> Tasks { get; private set; } = [];
 
     public User() { }
 
