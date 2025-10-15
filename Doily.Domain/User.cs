@@ -9,6 +9,8 @@ public class User
     public string Username { get; private set; } = String.Empty;
     public string Password { get; private set; } = String.Empty;
 
+    public List<Task> Tasks { get; private set; } = [];
+
     public User() { }
 
     public User(string firstName, string lastName, string username, string password)
