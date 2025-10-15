@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doily.Domain", "Doily.Domain\Doily.Domain.csproj", "{FE590921-EDAA-4757-9528-30CBAA6E3B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Doily.Domain", "Doily.Domain\Doily.Domain.csproj", "{FE590921-EDAA-4757-9528-30CBAA6E3B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Doily.API", "Doily.API\Doily.API.csproj", "{339E60B6-C43F-4EA7-8308-75D0B9C241C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FE590921-EDAA-4757-9528-30CBAA6E3B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FE590921-EDAA-4757-9528-30CBAA6E3B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE590921-EDAA-4757-9528-30CBAA6E3B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{339E60B6-C43F-4EA7-8308-75D0B9C241C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{339E60B6-C43F-4EA7-8308-75D0B9C241C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{339E60B6-C43F-4EA7-8308-75D0B9C241C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{339E60B6-C43F-4EA7-8308-75D0B9C241C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
