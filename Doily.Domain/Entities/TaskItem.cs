@@ -9,6 +9,8 @@ public class TaskItem
     public DateTime? Deadline { get; private set; }
     public bool IsCompleted { get; private set; } = false;
 
+    public User User { get; private set; }
+
     public TaskItem() { }
 
     public TaskItem(int userID, string title, string description)
