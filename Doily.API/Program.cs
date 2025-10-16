@@ -8,10 +8,9 @@ namespace Doily.API
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
-            string? connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+            string? connectionString = builder.Configuration.GetConnectionString("Doily");
             if (string.IsNullOrWhiteSpace(connectionString)) throw new InvalidOperationException("Connection string was not provided.");
             // Add services to the container.
-
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<DoilyContext>(optionsBuilder => optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
