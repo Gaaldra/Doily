@@ -6,6 +6,6 @@ namespace Doily.API.Services.Interfaces;
 
 public interface IUserService
 {
-    Task<ServiceResult<UserResponseDto>> RegisterUser(UserResgistrationDto request);
-    Task<ServiceResult<UserResponseDto>> GetUserByID(int id);
+    Task<ServiceResult<UserResponseDto>> RegisterUserAsync(UserResgistrationDto request);
+    Task<ServiceResult<UserResponseDto>> GetUserByIdAsync(int id);
 }

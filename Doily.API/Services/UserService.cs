@@ -13,7 +13,7 @@ public class UserService(DoilyContext context, IMapper mapper) : IUserService
     private readonly IMapper _mapper = mapper;
     private readonly DoilyContext _context = context;
 
-    public async Task<ServiceResult<UserResponseDto>> RegisterUser(UserResgistrationDto request)
+    public async Task<ServiceResult<UserResponseDto>> RegisterUserAsync(UserResgistrationDto request)
     {
         var newUser = new User(request.FirstName, request.LastName, request.Username, request.Password);
         try
@@ -28,7 +28,7 @@ public class UserService(DoilyContext context, IMapper mapper) : IUserService
             return ServiceResult<UserResponseDto>.Fail("Usuario não pode ser inserido no banco de dados");
         }
     }
-    public async Task<ServiceResult<UserResponseDto>> GetUserByID(int id)
+    public async Task<ServiceResult<UserResponseDto>> GetUserByIdAsync(int id)
     {
         User? user = await _context.Users.FindAsync(id);
         if (user is null) return ServiceResult<UserResponseDto>.Fail("Usuário não encontrado");
