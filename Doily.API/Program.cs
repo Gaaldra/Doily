@@ -14,6 +14,7 @@ namespace Doily.API
 
             builder.Services.AddControllers();
             builder.Services.AddDbContext<DoilyContext>(optionsBuilder => optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
+            builder.Services.AddAutoMapper(cfg => { });
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
